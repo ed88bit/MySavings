@@ -11,12 +11,15 @@ import org.springframework.stereotype.Repository;
 public interface MovementsRepository extends CrudRepository<Movements, String> {
 
     @Query(value = " SELECT sum(negative_amounts) FROM movements " +
-            " WHERE competence_month = ?1 ",
+            " WHERE competence_month = ?1 " +
+            " AND competence_year = YEAR(CURDATE())",
+
     nativeQuery = true)
     String getOutflowsAtMonth(@Param("month") Integer month);
 
     @Query(value = " SELECT sum(positive_amounts) FROM movements " +
-            " WHERE competence_month = ?1 ",
+            " WHERE competence_month = ?1 "+
+            " AND competence_year = YEAR(CURDATE())",
             nativeQuery = true)
     String getIncomeAtMonth(Integer month);
 }
