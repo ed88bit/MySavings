@@ -1,7 +1,6 @@
 package my.mys.service;
 
 import lombok.AllArgsConstructor;
-import my.mys.controller.MovementsController;
 import my.mys.repository.MovementsRepository;
 import org.springframework.stereotype.Service;
 
@@ -34,7 +33,7 @@ public class MovementsService {
         double incomeAmount = Double.parseDouble(incomeAtMonth(month));
         double outflowAmount = Double.parseDouble(outflowsAtMonth(month));
 
-        return String.valueOf(BigDecimal.valueOf(incomeAmount+outflowAmount).setScale(2, RoundingMode.HALF_EVEN));
+        return String.valueOf(BigDecimal.valueOf(incomeAmount + outflowAmount).setScale(2, RoundingMode.HALF_EVEN));
 
     }
 }

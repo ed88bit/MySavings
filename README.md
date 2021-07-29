@@ -7,7 +7,6 @@
 ###### service that recovers all the incomes received in the indicated month
 #####3. /balanceAtMonth?Month=?
 ###### service that recovers the total budget of the indicated month
-#####. /getCashwithdrawalAtYear?Year=?
-#####. /getIcomeAtYear?Year=?
-#####. /TotalBalance
-#####. /BalanceAtYear?Year=?
+#####4. /loadDatabaseWithExcel
+###### service that loads an Excel and migrate the data to mySql db
+###### (made for Deutsche Bank IT - to implement for other banks)

@@ -7,5 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MySavingsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MySavingsApplication.class, args);}
+        SpringApplication.run(MySavingsApplication.class, args);
+    }
 }

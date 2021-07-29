@@ -13,7 +13,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @EqualsAndHashCode
 @Builder
-@Table(name = "movements", schema="mys")
+@Table(name = "movements", schema = "mys")
 public class Movements {
 
     @Id

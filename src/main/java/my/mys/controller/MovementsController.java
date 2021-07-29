@@ -1,7 +1,5 @@
 package my.mys.controller;
 
-import java.util.List;
-
 import lombok.AllArgsConstructor;
 import my.mys.service.MovementsService;
 import org.springframework.http.ResponseEntity;
